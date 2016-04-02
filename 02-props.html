@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Learn React | 02 - Props</title>
+  </head>
+  <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.8/react.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.8/react-dom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+      <script type="text/babel">
+          var Avatar = React.createClass({
+              getDefaultProps: function() {
+                  return {
+                      path: 'http://placehold.it/98x98',
+                  };
+              },
+              render: function() {
+                  return (
+                      <div>
+                          <a href={this.props.path}>
+                              <img src={this.props.path} alt="Avatar"/>
+                          </a>
+                      </div>
+                  );
+              }
+          });
+
+          ReactDOM.render(<Avatar path="http://lorempixel.com/98/98/" />, document.body);
+      </script>
+  </body>
+</html>
