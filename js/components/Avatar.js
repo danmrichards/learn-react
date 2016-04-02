@@ -1,10 +1,16 @@
+/**
+ * @file
+ * Avatar component - Displays an avatar with a fallback image.
+ */
+
 var Avatar = React.createClass({
+
     getDefaultProps: function() {
         return {
             path: 'http://placehold.it/98x98',
         };
     },
-    
+
     render: function() {
         return (
             <div>
@@ -14,6 +20,7 @@ var Avatar = React.createClass({
             </div>
         );
     }
+
 });
 
 ReactDOM.render(<Avatar path="http://lorempixel.com/98/98/" />, document.body);

@@ -1,4 +1,10 @@
+/**
+ * @file
+ * Counter component - A simple increase/decrease counter.
+ */
+
 var Counter = React.createClass({
+
     getInitialState: function() {
         return {
             count: 0
@@ -27,6 +33,7 @@ var Counter = React.createClass({
             </div>
         );
     }
+
 });
 
 ReactDOM.render(<Counter />, document.body);
