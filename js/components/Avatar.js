@@ -4,6 +4,7 @@ var Avatar = React.createClass({
             path: 'http://placehold.it/98x98',
         };
     },
+    
     render: function() {
         return (
             <div>
