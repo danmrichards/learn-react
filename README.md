@@ -10,4 +10,4 @@ Lesson 3 onwards requires a server; quickest way to do this is to just run a loc
 php -S localhost:8885
 ```
 
-And then go to http://localhost:8885/03-inline-to-external-scripts.html in the browser.
+And then go to [http://localhost:8885/LESSON_FILE.html](http://localhost:8885/LESSON_FILE.html) in the browser, where LESSON_FILE is the html file you want to view.
